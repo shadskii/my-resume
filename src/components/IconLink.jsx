@@ -1,11 +1,14 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-function IconLink(props) {
-    return (
-        <a href={props.link}>
-            <i class={"fa " + props.icon + ' fa-5x'} aria-hidden="true"></i>
-        </a>
-    );
+const IconLink = ({ icon, link }) => (
+    <a href={link}>
+        <i class={"fa " + icon + ' fa-5x'} aria-hidden="true"></i>
+    </a>
+);
+
+IconLink.propTypes = {
+    icon: PropTypes.string.isRequired,
+    link: PropTypes.string.isRequired
 }
-
 export default IconLink;    
