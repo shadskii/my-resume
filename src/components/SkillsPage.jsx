@@ -24,9 +24,9 @@ class SkillsPage extends Component {
                 <h1>Skills</h1>
                 <div className='row'>
                     {skills.map(skill =>
-                        <h1 className='col-lg-4'>
+                        <h3 className='col-lg-4'>
                             <span className="label label-success">{skill}</span>
-                        </h1>
+                        </h3>
 
                     )}
                 </div>

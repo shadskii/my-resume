@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const IconLink = ({ icon, link }) => (
     <a href={link}>
-        <i class={"fa " + icon + ' fa-5x'} aria-hidden="true"></i>
+        <i class={"fa " + icon + ' fa-5x' + ' col-lg-2'} aria-hidden="true"></i>
     </a>
 );
 
