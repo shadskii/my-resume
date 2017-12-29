@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { SectionsContainer, Section, Header, Footer } from 'react-fullpage';
+import IntroPage from './components/IntroPage';
 import jake from './jake.jpg'
 
 
@@ -9,7 +10,7 @@ class App extends Component {
   render() {
     let options = {
       sectionClassName: 'section',
-      anchors: ['sectionOne', 'sectionTwo', 'sectionThree'],
+      anchors: ['intro', 'skills', 'education', 'experience', 'projects', 'contact-me'],
       delay: 500,
       scrollBar: false,
       navigation: true,
@@ -28,18 +29,13 @@ class App extends Component {
         </Header>
         <SectionsContainer  {...options}>
           <Section verticalAlign="true" >
-            <div>
-              <div className='row col'>
-                <img className='img-circle ' src={jake} />
-              </div>
-
-              <div className='row col'>
-                <h1 ><span className='label label-primary'>Developer</span></h1>
-              </div>
-            </div>
+            <IntroPage />
           </Section>
-          <Section color="#A7DBD8">Page 2</Section>
-          <Section color="#E0E4CC">Page 3</Section>
+          <Section color="#A7DBD8">skills</Section>
+          <Section color="#E0E4CC">education</Section>
+          <Section color="#E0E4CC">experience</Section>
+          <Section color="#E0E4CC">projects</Section>
+          <Section color="#A7DBD8">contact me</Section>
         </SectionsContainer>
       </div>
     );
