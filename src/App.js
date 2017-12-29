@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import { SectionsContainer, Section, Header, Footer } from 'react-fullpage';
+import { SectionsContainer, Section, Header, ScrollToTopOnMount } from 'react-fullpage';
 import IntroPage from './components/IntroPage';
-
+import ContactPage from './components/ContactPage';
 
 class App extends Component {
   render() {
@@ -32,6 +32,7 @@ class App extends Component {
           </div>
         </Header>
         <SectionsContainer  {...options}>
+          <ScrollToTopOnMount />
           <Section verticalAlign="true" >
             <IntroPage />
           </Section>
@@ -39,7 +40,9 @@ class App extends Component {
           <Section color="#E0E4CC">education</Section>
           <Section color="#E0E4CC">experience</Section>
           <Section color="#E0E4CC">projects</Section>
-          <Section color="#A7DBD8">contact me</Section>
+          <Section color="#A7DBD8">
+            <ContactPage />
+          </Section>
         </SectionsContainer>
       </div>
     );
