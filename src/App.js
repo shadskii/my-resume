@@ -3,7 +3,6 @@ import logo from './logo.svg';
 import './App.css';
 import { SectionsContainer, Section, Header, Footer } from 'react-fullpage';
 import IntroPage from './components/IntroPage';
-import jake from './jake.jpg'
 
 
 class App extends Component {
@@ -23,9 +22,14 @@ class App extends Component {
     return (
       <div className='container-fluid'>
         <Header>
-          <a href="#sectionOne">Section One</a>
-          <a href="#sectionTwo">Section Two</a>
-          <a href="#sectionThree">Section Three</a>
+          <div className='btn-group'>
+            <a className='btn btn-default' href="#intro">Intro</a>
+            <a className='btn btn-default' href="#skills">Skills</a>
+            <a className='btn btn-default' href="#education">Education</a>
+            <a className='btn btn-default' href="#experience">Experience</a>
+            <a className='btn btn-default' href="#projects">Projects</a>
+            <a className='btn btn-default' href="#contact-me">Contact Me</a>
+          </div>
         </Header>
         <SectionsContainer  {...options}>
           <Section verticalAlign="true" >
