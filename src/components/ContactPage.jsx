@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ProfilePicture from './ProfilePicture';
+import IconLink from './IconLink';
 
 class ContactPage extends Component {
 
@@ -11,10 +12,10 @@ class ContactPage extends Component {
                 </div>
                 <h1>Contact Me</h1>
                 <div className='row col'>
-                    <i class="fa fa-github fa-5x"></i>
-                    <i class="fa fa-linkedin-square fa-5x" aria-hidden="true"></i>
-                    <i class="fa fa-stack-overflow fa-5x" aria-hidden="true"></i>
-                    <i class="fa fa-envelope fa-5x" aria-hidden="true"></i>
+                    <IconLink icon='fa-github' link='https://github.com/shadskii' />
+                    <IconLink icon='fa-linkedin-square' link='https://www.linkedin.com/in/jacob-k-hassel/' />
+                    <IconLink icon='fa-stack-overflow' link='https://stackoverflow.com/users/7601918/' />
+                    <IconLink icon='fa-envelope' link='mailto:jake.k.hassel@gmail.com' />
                 </div>
             </div>
         );
