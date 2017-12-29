@@ -4,6 +4,7 @@ import './App.css';
 import { SectionsContainer, Section, Header, ScrollToTopOnMount } from 'react-fullpage';
 import IntroPage from './components/IntroPage';
 import ContactPage from './components/ContactPage';
+import SkillsPage from './components/SkillsPage';
 
 class App extends Component {
   render() {
@@ -36,7 +37,9 @@ class App extends Component {
           <Section verticalAlign="true" >
             <IntroPage />
           </Section>
-          <Section color="#A7DBD8">skills</Section>
+          <Section color="#A7DBD8">
+            <SkillsPage />
+          </Section>
           <Section color="#E0E4CC">education</Section>
           <Section color="#E0E4CC">experience</Section>
           <Section color="#E0E4CC">projects</Section>
