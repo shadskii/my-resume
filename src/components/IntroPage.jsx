@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import jake from '../jake.jpg';
+import ProfilePicture from './ProfilePicture';
 
 class IntroPage extends Component {
 
@@ -7,11 +8,13 @@ class IntroPage extends Component {
         return (
             <div>
                 <div className='row col'>
-                    <img className='img-circle ' src={jake} />
+                    <ProfilePicture />
                 </div>
 
                 <div className='row col'>
-                    <h1 ><span className='label label-primary'>Developer</span></h1>
+                    <h1 >
+                        <span className='label label-primary'>Software Developer</span>
+                    </h1>
                 </div>
             </div>
         );
