@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import '../styles/App.css';
 import { SectionsContainer, Section, Header, ScrollToTopOnMount } from 'react-fullpage';
-import IntroPage from './components/IntroPage';
-import ContactPage from './components/ContactPage';
-import SkillsPage from './components/SkillsPage';
-import ExperiencePage from './components/ExperiencePage';
+import IntroPage from './IntroPage';
+import ContactPage from './ContactPage';
+import SkillsPage from './SkillsPage';
+import ExperiencePage from './ExperiencePage';
 
 class App extends Component {
   render() {
