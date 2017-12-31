@@ -23,8 +23,9 @@ class App extends Component {
 
     return (
       <div >
+        <ScrollToTopOnMount />
         <SectionsContainer  {...options}>
-          <ScrollToTopOnMount />
+
           <Section verticalAlign="true" >
             <IntroPage />
           </Section>
