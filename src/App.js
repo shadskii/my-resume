@@ -5,12 +5,13 @@ import { SectionsContainer, Section, Header, ScrollToTopOnMount } from 'react-fu
 import IntroPage from './components/IntroPage';
 import ContactPage from './components/ContactPage';
 import SkillsPage from './components/SkillsPage';
+import ExperiencePage from './components/ExperiencePage';
 
 class App extends Component {
   render() {
     let options = {
       sectionClassName: 'section',
-      anchors: ['intro', 'skills', 'education', 'experience', 'projects', 'contact-me'],
+      anchors: ['intro', 'skills', 'experience', 'projects', 'education', 'contact-me'],
       delay: 500,
       scrollBar: false,
       navigation: true,
@@ -30,9 +31,11 @@ class App extends Component {
           <Section color="#A7DBD8">
             <SkillsPage />
           </Section>
-          <Section color="#E0E4CC">education</Section>
-          <Section color="#E0E4CC">experience</Section>
+          <Section color="#E0E4CC">
+            <ExperiencePage />
+          </Section>
           <Section color="#E0E4CC">projects</Section>
+          <Section color="#E0E4CC">education</Section>
           <Section
             verticalAlign="true"
             color="#A7DBD8">
