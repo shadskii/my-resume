@@ -15,38 +15,45 @@ class App extends Component {
       scrollBar: false,
       navigation: true,
       verticalAlign: false,
-      sectionPaddingTop: '50px',
-      sectionPaddingBottom: '50px',
+      sectionPaddingTop: '0px',
+      sectionPaddingBottom: '0px',
       arrowNavigation: true
     };
 
     return (
-      <div className='container-fluid'>
-        <Header>
-          <div className='btn-group'>
-            <a className='btn btn-default' href="#intro">Intro</a>
-            <a className='btn btn-default' href="#skills">Skills</a>
-            <a className='btn btn-default' href="#education">Education</a>
-            <a className='btn btn-default' href="#experience">Experience</a>
-            <a className='btn btn-default' href="#projects">Projects</a>
-            <a className='btn btn-default' href="#contact-me">Contact Me</a>
-          </div>
-        </Header>
-        <SectionsContainer  {...options}>
-          <ScrollToTopOnMount />
-          <Section verticalAlign="true" >
-            <IntroPage />
-          </Section>
-          <Section color="#A7DBD8">
-            <SkillsPage />
-          </Section>
-          <Section color="#E0E4CC">education</Section>
-          <Section color="#E0E4CC">experience</Section>
-          <Section color="#E0E4CC">projects</Section>
-          <Section color="#A7DBD8">
-            <ContactPage />
-          </Section>
-        </SectionsContainer>
+      <div>
+
+        {/* <Header>
+          <nav className="navbar navbar-default ">
+            <ul className="nav navbar-nav">
+              <li className='active' ><a href="#intro">Intro</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#education">Education</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact-me">Contact Me</a></li>
+            </ul>
+          </nav>
+        </Header> */}
+        <div >
+          <SectionsContainer  {...options}>
+            <ScrollToTopOnMount />
+            <Section verticalAlign="true" >
+              <IntroPage />
+            </Section>
+            <Section color="#A7DBD8">
+              <SkillsPage />
+            </Section>
+            <Section color="#E0E4CC">education</Section>
+            <Section color="#E0E4CC">experience</Section>
+            <Section color="#E0E4CC">projects</Section>
+            <Section
+              verticalAlign="true"
+              color="#A7DBD8">
+              <ContactPage />
+            </Section>
+          </SectionsContainer>
+        </div>
       </div>
     );
   }
