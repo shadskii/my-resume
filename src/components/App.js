@@ -13,7 +13,7 @@ class App extends Component {
       anchors: ['intro', 'skills', 'experience', 'projects', 'education', 'contact-me'],
       delay: 500,
       scrollBar: false,
-      navigation: true,
+      navigation: false,
       verticalAlign: false,
       sectionPaddingTop: '0px',
       sectionPaddingBottom: '0px',
