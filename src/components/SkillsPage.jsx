@@ -28,7 +28,7 @@ class SkillsPage extends Component {
         return (
             <div className='container'  >
                 <h1 className='row col'>Skills</h1>
-                <div className='row'>
+                <div className='row '>
                     {skills.map(skill =>
                         <Card
                             key={skill}

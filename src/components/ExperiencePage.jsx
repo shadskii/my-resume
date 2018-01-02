@@ -49,7 +49,8 @@ class ExperiencePage extends Component {
     render() {
         return (
             <div className='container'>
-                Professional Experience
+                <h1 className='row col'>Professional Experience</h1>
+
                 {work.map(exp =>
                     <ExperienceCard {...exp} />
                 )}
