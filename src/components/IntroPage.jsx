@@ -7,12 +7,12 @@ class IntroPage extends Component {
     render() {
         return (
             <div className='container'>
-                <div className='row'>
+                <div className='row center-in-page'>
                     <div >
                         <ProfilePicture />
                     </div>
                 </div>
-                <div className='row'>
+                <div className='row center-in-page'>
                     <div >
                         <h1 >
                             <span className='label label-primary'>Software Developer</span>
