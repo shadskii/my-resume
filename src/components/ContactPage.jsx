@@ -8,17 +8,18 @@ class ContactPage extends Component {
 
     render() {
         return (
-            <div className='container '>
-                <div className='row col'>
+            <div className='container-fluid'>
+                <div className='row center-in-page'>
                     <ProfilePicture />
                 </div>
-                <h1>Contact Me</h1>
+                <h1 className='row center-in-page' >Contact Me</h1>
                 <div className='row'>
-                    <IconLink icon='fa-github' link='https://github.com/shadskii' />
-                    <IconLink icon='fa-linkedin-square' link='https://www.linkedin.com/in/jacob-k-hassel/' />
-                    <IconLink icon='fa-stack-overflow' link='https://stackoverflow.com/users/7601918/' />
-                    <IconLink icon='fa-envelope' link='mailto:jake.k.hassel@gmail.com' />
+                    <IconLink icon='fa-github' link='https://github.com/shadskii' css='col-lg-1 col-lg-offset-4' />
+                    <IconLink icon='fa-linkedin-square' link='https://www.linkedin.com/in/jacob-k-hassel/' css='col-lg-1' />
+                    <IconLink icon='fa-stack-overflow' link='https://stackoverflow.com/users/7601918/' css='col-lg-1' />
+                    <IconLink icon='fa-envelope' link='mailto:jake.k.hassel@gmail.com' css='col-lg-1' />
                 </div>
+
             </div>
         );
     }
