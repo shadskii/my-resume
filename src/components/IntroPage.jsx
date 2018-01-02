@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import '../styles/IntroPage.css';
 import jake from '../jake.jpg';
 import ProfilePicture from './ProfilePicture';
 
@@ -6,19 +7,14 @@ class IntroPage extends Component {
 
     render() {
         return (
-            <div className='container'>
-                <div className='row center-in-page'>
-                    <div >
-                        <ProfilePicture />
-                    </div>
+            <div className='container-fluid background-img-intro'>
+                <div>
+                    <ProfilePicture />
+                    <h1>
+                        <span className='label label-primary'>Software Developer</span>
+                    </h1>
                 </div>
-                <div className='row center-in-page'>
-                    <div >
-                        <h1 >
-                            <span className='label label-primary'>Software Developer</span>
-                        </h1>
-                    </div>
-                </div>
+
             </div>
         );
     }
