@@ -34,7 +34,7 @@ class App extends Component {
           <Section color="#E0E4CC">
             <ExperiencePage />
           </Section>
-          <Section color="#E0E4CC">projects</Section>
+          <Section color="#A7DBD8">projects</Section>
           <Section color="#E0E4CC">education</Section>
           <Section
             verticalAlign="true"
