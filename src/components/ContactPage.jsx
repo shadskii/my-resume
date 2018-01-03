@@ -19,7 +19,13 @@ class ContactPage extends Component {
                     <IconLink icon='fa-stack-overflow' link='https://stackoverflow.com/users/7601918/' css='col-lg-1' />
                     <IconLink icon='fa-envelope' link='mailto:jake.k.hassel@gmail.com' css='col-lg-1' />
                 </div>
-
+                <div className='row center-in-page'>
+                    <div >
+                        <h1 >
+                            <span className='label label-primary'>RESUME</span>
+                        </h1>
+                    </div>
+                </div>
             </div>
         );
     }
