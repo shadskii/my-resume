@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Paper from 'material-ui/Paper';
 import { Card, CardHeader } from 'material-ui/Card';
+import '../styles/SkillsPage.css';
 
 class SkillsPage extends Component {
 
@@ -29,18 +30,16 @@ class SkillsPage extends Component {
             <div className='container'  >
                 <h1 className='row col'>Skills</h1>
                 <div className='row '>
-                    {skills.map(skill =>
-                        <Card
-                            key={skill}
-                            className='col-lg-3 col-sm-10'
-                            style={style}>
-                            <CardHeader
-                                title={skill}
-                                avatar={<i class="fa fa-check-square-o fa-2x" aria-hidden="true"></i>}
-                            />
-                        </Card>
-
-                    )}
+                    <ul style={{ listStyleType: 'none' }}>
+                        {skills.map(skill =>
+                            <li
+                                key={skill}
+                                className='col-lg-3 col-sm-10 skill'>
+                                {<i className="fa fa-check-square-o fa-2x" aria-hidden="true"></i>}
+                                {skill}
+                            </li>
+                        )}
+                    </ul>
                 </div>
             </div >
         );
