@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Card, CardHeader, CardText } from 'material-ui/Card';
 import nuwc from '../nuwc.png';
+import '../styles/ExperiencePage.css';
 
 
 function ExperienceCard({ title, duration, logo, bullets }) {
@@ -10,7 +11,7 @@ function ExperienceCard({ title, duration, logo, bullets }) {
                 title={title}
                 subtitle={duration}
                 avatar={logo}
-                className='pad-card'
+                className='pad-card '
             />
             <CardText>
                 <ul>
@@ -48,12 +49,13 @@ class ExperiencePage extends Component {
 
     render() {
         return (
-            <div className='container'>
+            <div className='container-fluid'>
                 <h1 className='row col'>Professional Experience</h1>
-
-                {work.map(exp =>
-                    <ExperienceCard {...exp} />
-                )}
+                <div className='col-lg-6 col-lg-offset-3'>
+                    {work.map(exp =>
+                        <ExperienceCard {...exp} />
+                    )}
+                </div>
             </div>
         );
     }
