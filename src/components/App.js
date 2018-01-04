@@ -5,6 +5,7 @@ import IntroPage from './IntroPage';
 import ContactPage from './ContactPage';
 import SkillsPage from './SkillsPage';
 import ExperiencePage from './ExperiencePage';
+import EducationPage from './EducationPage';
 
 class App extends Component {
   render() {
@@ -35,7 +36,9 @@ class App extends Component {
             <ExperiencePage />
           </Section>
           <Section color="#A7DBD8">projects</Section>
-          <Section color="#E0E4CC">education</Section>
+          <Section color="#85929E">
+            <EducationPage />
+          </Section>
           <Section
             verticalAlign="true"
             color="#A7DBD8">
