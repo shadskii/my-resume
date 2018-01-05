@@ -28,7 +28,7 @@ const work = [
         logo: nuwc,
         bullets: [
             'Developer on Java application with Spring framework',
-            'Created a Java CLI to parse the validity of and compute metrics for very large datasets',
+            'Created a Java CLI to parse very large datasets for validity and compute metrics',
             'C++ user interface development with Qt'
         ]
     },
