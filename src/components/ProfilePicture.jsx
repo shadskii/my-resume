@@ -11,7 +11,7 @@ const style = {
 };
 function ProfilePicture() {
     return (
-        <Paper style={style} zDepth={4} circle={true} >
+        <Paper style={style} zDepth={5} circle={true} >
             <img style={{ width: '100%', height: 'auto' }} src={jake} />
         </Paper>
     )
