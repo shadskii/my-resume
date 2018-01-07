@@ -21,6 +21,18 @@ function ExperienceCard({ title, duration, logo, bullets }) {
         </Card>
     );
 }
+function FlatExperienceCard({ title, duration, logo, bullets }) {
+    return (
+        <div className='row pad-above'>
+            <img className='img-rounded col-lg-2' src={logo} />
+            <ul className='col-lg-8 p'>
+                <h1>{title}</h1>
+                {bullets.map(b => <li>{b}</li>)}
+            </ul>
+        </div>
+    );
+}
+
 const work = [
     {
         title: 'Naval Undersea Warfare Center',
@@ -38,7 +50,7 @@ const work = [
         logo: nuwc,
         bullets: [
             'Developer on Java application using the Spring Framework and JavaFX',
-            'Member of an agile software development team using scrum methodology ',
+            'Member of an agile software development team using scrum methodology',
             'Developer on a file transfer web application using Spring MVC and JQuery UI'
         ]
     }
@@ -51,9 +63,9 @@ class ExperiencePage extends Component {
         return (
             <div className='container-fluid'>
                 <h1 className='row col'>Professional Experience</h1>
-                <div className='col-lg-6 col-lg-offset-3'>
+                <div className=' '>
                     {work.map(exp =>
-                        <ExperienceCard {...exp} />
+                        <FlatExperienceCard {...exp} />
                     )}
                 </div>
             </div>
